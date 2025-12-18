@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- Configuración de Hibernate -->
+<hibernate-configuration>
+  <!-- Para establecer la conexión a la BD y manejarla. Pueden existir varias, una por cada BD -->
+  <session-factory>
+    <!-- Variante SQL que usa la BD para ejecutar querys, dialecto -->
+    <!--<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>-->
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL55Dialect</property>
+    <!-- Para mostrar el resultado de cada operación realizada por Hibernate contra la base de datos, valor true -->
+    <property name="hibernate.show_sql">true</property>
+    <!-- Escribe todas las declaraciones SQL a la consola -->
+    <property name="hibernate.format_sql">true</property>
+    
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <!-- Pool de conexiones -->
+    <!-- Indica el nombre del DataSource con el que se conectará Hibernate a la base de datos -->
+     <property name="hibernate.connection.datasource">java:comp/env/jdbc/boxing_gym</property> 
+    
+   
+    <!-- Mediante anotaciones en el propio bean -->
+    <mapping class="es.boxinggymmanager.beans.Empleado"/>
+    <mapping class="es.boxinggymmanager.beans.Cliente"/>
+    <mapping class="es.boxinggymmanager.beans.Entrenamiento"/>
+    <mapping class="es.boxinggymmanager.beans.Peticion"/>
+
+
+  </session-factory>
+</hibernate-configuration>

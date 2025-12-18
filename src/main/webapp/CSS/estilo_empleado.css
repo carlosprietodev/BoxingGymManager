@@ -1,0 +1,113 @@
+
+/* Sidebar */
+#sidebar {
+    width: 20%;
+    background: #2E3440;
+    color: #ECEFF4;
+
+    flex-shrink: 0;
+}
+#sidebar .nav-link {
+    color: #ECEFF4;
+}
+#sidebar li.active,
+#sidebar .nav-link:hover {
+    background: #3B4252;
+    color: #f3b227;
+}
+.icono{
+    margin-top: 5px;
+    color: #dc3545;
+}
+
+
+
+/* Main area */
+#content {
+    /*background: #faf9f9;*/
+    background-color: #f8f4e5;
+    min-height: 600px;
+    padding: 2rem;
+}
+.card-control {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+.card-control:hover {
+    transform: translateY(-4px);
+}
+.card-control .card-body {
+    text-align: center;
+}
+.card-control .icon {
+    font-size: 2.5rem;
+    color: #2E3440;
+}
+
+/*estilos form crear cliente */
+.form_crear {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.form_crear:hover {
+    transform: scale(1.005);
+}
+
+.estilo_label {
+    font-weight: 600;
+    color: #2E3440;
+    margin-bottom: 5px;
+}
+
+.input-group-focus input:focus,
+.input-group-focus select:focus {
+    /*border-color: #bf1e2e;*/
+   /* box-shadow: 0 0 8px rgba(191, 30, 46, 0.3);*/
+    transition: all 0.3s ease;
+}
+
+.input-group-text {
+    background-color: #2E3440;
+    color: white;
+    border: none;
+}
+
+/*graficos*/
+.div_graficos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+
+#graficoPieEntrenamiento, #graficoLocalidad{
+    background-color: #c3d8ed;
+    border-radius: 2px;
+}
+
+.icono_datos{
+    font-size: 20px;
+}
+
+/* acordeon entrenamientos*/
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: #dc3545;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #842029;
+}
+
+.tipo{
+    width: 15%;
+}
+
+.descripcion{
+    width: 80%;
+}

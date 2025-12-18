@@ -1,0 +1,216 @@
+:root {
+    --color-bg: #2E3440;           /* Gris pizarra */
+    --color-surface: #ECEFF4;      /* Blanco suave */
+    --color-text-primary: #191c20; /* Gris oscuro */
+    --color-text-secondary: #4C566A; /* Gris medio */
+    --color-accent: #D7263D;       /* Rojo intenso */
+} /*variables para los colores*/
+
+body {
+  background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    background-color: var(--color-text-secondary);
+    padding: 2px;
+}
+.navbar .nav-link, .navbar .navbar-brand {
+    color: var(--color-surface) !important;
+}
+.navbar .nav-link:hover {
+    color: var(--color-accent) !important;
+}
+.img_logo{
+    width: 80px;
+}
+
+.perfil_img{
+    width: 50px ;
+
+}
+.texto_perfil{
+    color: #ECEFF4;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+
+
+/*section hero index*/
+.hero {
+    background: url('../Images/Boxeo/principal.jpg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.hero .content {
+    position: relative;
+    z-index: 1;
+    color: var(--color-surface);
+}
+.btn_rojo{
+    background-color: var(--color-accent);
+    color: var(--color-surface);
+    border: none;
+}
+.btn_rojo:disabled{
+    background-color: var(--color-accent);
+    color: var(--color-surface);
+    border: none;
+    opacity: 0.70;
+    cursor: not-allowed;
+}
+.btn_rojo:hover{
+    background-color: #930415;
+    color: var(--color-surface);
+}
+.section-surface {
+    background-color: var(--color-surface);
+    color: var(--color-bg);
+    padding: 4rem 0;
+}
+.card-title, .card-text {
+    color: var(--color-bg);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Efecto hover para las tarjetas */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.img_basico{
+    width: 200px;
+}
+
+/*formulario*/
+
+.estilo_label{
+    color: var(--color-surface);
+    font-size: 20px;
+}
+
+.valido{
+    border: 1px solid green;
+
+}
+.no_valido{
+    border: 1px solid red;
+    background-color: #f6718a !important;
+}
+
+/* Fondo del bloque del formulario */
+.formulario_contacto {
+    background-color: #3B4252;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Inputs del formulario */
+.formulario_contacto input,
+.formulario_contacto select {
+    background-color: #59627a;
+    color: var(--color-surface);
+    border: 1px solid #4C566A;
+    border-radius: 8px;
+
+}
+
+.formulario_contacto input::placeholder {
+    color: #D8DEE9; /* gris claro */
+}
+
+.formulario_contacto input:focus,
+.formulario_contacto select:focus {
+    outline: none;
+
+}
+.estilo_check{
+    background-color: #ECEFF4;
+}
+
+/*footer*/
+footer{
+    background-color: var(--color-text-primary);
+    margin-top: auto;
+    padding: 2px;
+
+
+}
+.estilo_footer:hover {
+    color: #ffc107 !important;
+    transition: color 0.2s !important;
+    cursor: pointer;
+}
+
+.estilo_footer{
+    background-color: transparent;
+    border: none;
+
+}
+
+/*formulario inicio sesion */
+
+.input_login {
+    width: 100% !important;
+    background-color: #59627a !important;
+    color: var(--color-surface) !important;
+    border: 1px solid #4C566A !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 1rem !important;
+}
+.input_login::placeholder {
+    color: #D8DEE9;
+}
+.input_login:focus {
+    outline: none;
+
+}
+.aviso{
+    color: #f32748;
+}
+
+/*Politica de privacidad*/
+
+.privacidad-container {
+    background-color: #f8f9fa;
+    padding: 3rem 1rem;
+    min-height: 90vh;
+}
+
+.card-privacidad {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.card-privacidad h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #343a40;
+}
+
+.card-privacidad p {
+    text-align: justify;
+}
